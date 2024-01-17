@@ -1,0 +1,53 @@
+.post{
+  background-color: #9A6AFF;
+  box-sizing: border-box;
+  position: relative;
+  padding: 1rem;
+  outline: 1px solid black;
+  margin: 1rem auto;
+  max-width: 25rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black  ;
+}
+.post > span{
+  position: absolute;
+  top: 5px;;
+  right: 5px;;
+}
+.title{
+  font-size: 1.5rem;
+  margin: 5px 0
+}
+.description{
+  padding: 10px;
+  margin: 10px;
+  text-align: left;
+  outline: 1px solid #9A6AFF;
+  
+}
+.user-signature{
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 4fr;
+  align-items: center;
+  justify-content: center;
+  gap:5px;  
+  text-align: left;
+}
+.user-signature > img{
+  justify-self: center;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin:0;
+}
+#like{
+  font-size: 1rem;
+  justify-self: center;
+}
+
+
+@media screen and ( width <= 520px ){
+  .post{
+    width: calc(100vw - 1rem);
+  }
+  
+}
